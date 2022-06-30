@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta name = "viewport" content="with=device-width, initial scale=1.0">
+        <title> University Website Design </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">"
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Images/culogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-times" onclick="showMenu()"></i>
+            </nav>
+            
+            <div class="text-box">
+                <h1>World's leading University</h1>
+                <p>Chandigarh University is recognized by the University Grants Commission (UGC).<br>There are also courses which are also approved by AICTE, NCHMCT, BCI, IEEE, etc
+
+                </p>
+                <a href="" class="hero-btn">Visit us to know more</a>
+            </div>
+
+        </section>
+        <!-----course-------->
+        <section class="course">
+            <h1>Courses we Offer</h1>
+            <p>Chandigarh University offers numerous courses</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>
+                        CU offers wide range of intermediate courses such as there are many different type of Vocational Courses in Intermediate like : Intermediate General Courses, Vocational Courses, Short Term Vocational Certificate Courses, Technical Courses, Industrial Training Courses and many more with intermediate vocational courses list
+                        Our main intention is to ensure enough knowledge and full pledge command on each and every course so that students can take a correct decision.
+                    </p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>
+                        An academic degree is a qualification awarded to students upon successful completion of a course of study in higher education, usually at a college or university. We provide best ug courses with best faculty.
+                    </p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Graduate</h3>
+                    <p>
+                            Podt graduation courses are the courses that makes a student master in his field. These courses require high quality of education . Cu provides the best enivronment and study material for pg courses.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!---------campus---->
+        <section class="campus">
+            <h1>Our Global Campus</h1>
+            <p>
+                Our Global Campus connects students around the world to collaborate, discuss and learn together every day.
+            </p>
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="Images/cubackground.jfif">
+                    <div class="layer">
+                        <h3>LONDON</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="Images/globalcampus1.jfif">
+                    <div class="layer">
+                        <h3>New York</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="Images/globalcampus2.jfif">
+                    <div class="layer">
+                        <h3>Washington</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="facilities">
+            <h1>Our facilities</h1>
+            <p>CU Our Own University is thoughtfully designed to provide students with a vibrant learning atmosphere.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="Images/worldclasslib.png" width = "220">
+                    <div class="layer">
+                        <h3>World Class Library</h3>
+                    </div>
+                </div>
+                <div class="facilities-col">
+                    <img src="Images/playground.jfif">
+                    <div class="layer">
+                        <h3>Largest Playground</h3>
+                    </div>
+                </div>
+                <div class="facilities-col">
+                    <img src="Images/cafeteria.jfif" >
+                    <div class="layer">
+                        <h3>Huge Cafeteria</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-----js for toggle menu-->
+        <script>
+            var navLinks=document.getElementByID("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
